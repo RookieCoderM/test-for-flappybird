@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border:0;
+        }
+        html,body{
+            overflow: hidden;
+        }
+
+        canvas{
+            background: skyblue;
+        }
+    </style>
+    <script src="js/simple-inheritence.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Frames.js"></script>
+    <script src="js/NativeSource.js"></script>
+    <script src="js/Background.js"></script>
+    <script src="js/Pipe.js"></script>
+    <script src="js/Bird.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+<script>
+    // 设置画布背景大小
+    document.getElementById("canvas").width = document.documentElement.clientWidth;
+    document.getElementById("canvas").height = document.documentElement.clientHeight;
+
+    // 创建初始化游戏对象
+    var game = new Game({});
+</script>
+</body>
+</html>
